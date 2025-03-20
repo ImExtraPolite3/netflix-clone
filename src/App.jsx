@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <Profiles userImg={users[0].img} userName={users[0].name} />
+      <Profiles allUsers={users} />
     </>
   );
 }
