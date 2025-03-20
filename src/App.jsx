@@ -1,9 +1,11 @@
+import Profiles from './components/Proflies';
+import users from './components/allProfiles';
 import './App.css';
 
 function App() {
   return (
     <>
-      <h1>Hello</h1>
+      <Profiles userImg={users[0].img} userName={users[0].name} />
     </>
   );
 }
