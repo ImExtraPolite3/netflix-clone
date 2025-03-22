@@ -4,25 +4,30 @@
   margin: 0;
 }
 
+body {
+  background-color: #141414;
+  color: white;
+}
+
 #profile-section {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
 
   h1 {
     font-weight: unset;
-    font-size: 3.5rem;
+    font-size: max(30px, 3.5vw);
     letter-spacing: 1px;
   }
 }
 
 .image {
-  width: 11vw;
-  height: 11vw;
+  width: max(100px, 10vw);
+  height: max(100px, 10vw);
   border-radius: 5px;
+  border: solid 3px #141414;
 }
 
 .gray-image {
@@ -36,9 +41,9 @@
 #all-profiles {
   display: flex;
   flex-direction: row;
-  gap: 30px;
-  padding-bottom: 10vh;
-  padding-top: 1vh;
+  gap: 2.5vw;
+  padding-bottom: 12vh;
+  padding-top: 2%;
 }
 
 #all-profiles > div > a {
@@ -51,20 +56,26 @@
 
   h3 {
     font-weight: unset;
-    font-size: 1.2rem;
+    font-size: max(12px, 1.2vw);
     letter-spacing: 1px;
   }
 }
 
-#all-profiles > div > a > img {
-  width: 300px;
+#all-profiles > div:hover {
+  div {
+    border: solid 2px white;
+  }
+
+  h3 {
+    color: white;
+  }
 }
 
 #manage-profiles {
   background: none;
   color: gray;
-  font-size: 1.2rem;
+  font-size: max(14px, 1.2vw);
   letter-spacing: 1px;
   border: solid 1.5px gray;
-  padding: 10px 40px;
+  padding: min(1vw, 10px) min(4vw, 40px);
 }
