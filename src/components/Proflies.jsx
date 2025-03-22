@@ -9,7 +9,7 @@ export default function Profiles({ allUsers }) {
         {allUsers.map((user, index) => {
           return (
             <div id={user.id} key={index}>
-              <a href="#">
+              <a href="/browse">
                 <div className={`image ${user.img}`}></div>
                 <h3>{user.name}</h3>
               </a>
