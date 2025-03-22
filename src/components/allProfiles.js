@@ -1,11 +1,13 @@
 const users = [
   {
     name: 'ExtraPolite',
-    img: 'placeholder',
+    img: 'gray-image',
+    id: 'profile-one',
   },
   {
     name: 'Default',
-    img: 'img',
+    img: 'blue-image',
+    id: 'profile-two',
   },
 ];
 
