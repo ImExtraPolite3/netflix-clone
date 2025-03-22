@@ -41,7 +41,7 @@ body {
 #all-profiles {
   display: flex;
   flex-direction: row;
-  gap: 2.5vw;
+  gap: 2vw;
   padding-bottom: 12vh;
   padding-top: 2%;
 }
@@ -63,7 +63,7 @@ body {
 
 #all-profiles > div:hover {
   div {
-    border: solid 2px white;
+    border: solid 3px white;
   }
 
   h3 {
@@ -78,4 +78,10 @@ body {
   letter-spacing: 1px;
   border: solid 1.5px gray;
   padding: min(1vw, 10px) min(4vw, 40px);
+  cursor: pointer;
+}
+
+#manage-profiles:hover {
+  color: white;
+  border: solid 1.5px white;
 }
