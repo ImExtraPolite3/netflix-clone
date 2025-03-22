@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background-color: #040506;
+  padding-left: 37px;
+}
+
+.content {
+  height: calc(100vh - 65px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
