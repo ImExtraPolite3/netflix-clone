@@ -9,14 +9,17 @@ export default function Error() {
 
       <div className="content">
         <h1>Lost your way?</h1>
-        <p>
+        <p className="error-message">
           Sorry, we can't find that page. You'll find lots to explore on the
-          home page
+          home page.
         </p>
-        <button>Netfilx Home</button>
-        <p>
+        <button className="return">Netfilx Home</button>
+        <p className="error-code">
           Error Code <span>NSES-404</span>
         </p>
+        <div className="credits">
+          FROM <span>LOST IN SPACE</span>
+        </div>
       </div>
     </div>
   );
