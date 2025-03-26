@@ -16,6 +16,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: whenOpen 500ms;
 
   h1 {
     font-weight: unset;
@@ -85,4 +86,15 @@ body {
 #manage-profiles:hover {
   color: white;
   border: solid 1.5px white;
+}
+
+@keyframes whenOpen {
+  0% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
