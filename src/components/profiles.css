@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: whenOpen 500ms;
+  animation: whenOpen 500ms 500ms;
 
   h1 {
     font-weight: unset;
@@ -90,7 +90,7 @@ body {
 
 @keyframes whenOpen {
   0% {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 0;
   }
   100% {
