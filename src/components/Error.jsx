@@ -4,7 +4,9 @@ export default function Error() {
   return (
     <div id="error-page">
       <nav>
-        <img src="/netflix-logo.png" alt="" />
+        <a href="/profiles">
+          <img src="/netflix-logo.png" alt="" />
+        </a>
       </nav>
 
       <div className="content">
@@ -13,7 +15,9 @@ export default function Error() {
           Sorry, we can't find that page. You'll find lots to explore on the
           home page.
         </p>
-        <button className="return">Netfilx Home</button>
+        <form action="/profiles">
+          <button className="return">Netfilx Home</button>
+        </form>
         <p className="error-code">
           Error Code <span>NSES-404</span>
         </p>
