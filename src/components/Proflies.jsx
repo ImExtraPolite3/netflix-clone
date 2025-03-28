@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './profiles.css';
 
-export default function Profiles({ allUsers }) {
+export default function Profiles({ allUsers, checkProfile }) {
   const [whenOpen, setWhenOpen] = useState(null);
 
   useEffect(() => {
@@ -18,7 +18,16 @@ export default function Profiles({ allUsers }) {
         {allUsers.map((user, index) => {
           return (
             <div id={user.id} key={index}>
-              <a href="/browse">
+              <a
+                href="/browse"
+                onClick={(e) => {
+                  e.preventDefault();
+                  checkProfile(index);
+                  setTimeout(() => {
+                    window.location.href = '/browse';
+                  }, 500);
+                }}
+              >
                 <div className={`image ${user.img}`}></div>
                 <h3>{user.name}</h3>
               </a>

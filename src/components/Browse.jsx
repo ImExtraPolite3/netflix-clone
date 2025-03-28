@@ -1,3 +1,39 @@
-export default function Browse() {
-  return <h1>Browse</h1>;
+export default function Browse({ profileInfo }) {
+  return (
+    <div id="browse-section">
+      <nav>
+        <div className="left">
+          <div className="logo">
+            <img src="/browse-logo.png" alt="" />
+          </div>
+          <div className="links">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">TV Shows</a>
+              </li>
+              <li>
+                <a href="#">Movies</a>
+              </li>
+              <li>
+                <a href="#">New & Popular</a>
+              </li>
+              <li>
+                <a href="#">My List</a>
+              </li>
+              <li>
+                <a href="#">Browse by Languages</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="right">
+          {/* <div className="settings">{profileInfo.name}</div> */}
+          {console.log(profileInfo)}
+        </div>
+      </nav>
+    </div>
+  );
 }
