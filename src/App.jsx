@@ -12,11 +12,10 @@ function App() {
 
   return (
     <>
-      {console.log(checkProfile)}
       {name === 'profiles' ? (
         <Profiles allUsers={users} checkProfile={setCheckProfile} />
       ) : name === 'browse' ? (
-        <Browse profileInfo={users[checkProfile]} />
+        <Browse profileInfo={checkProfile} />
       ) : (
         <Error />
       )}

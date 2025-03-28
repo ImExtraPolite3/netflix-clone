@@ -29,10 +29,7 @@ export default function Browse({ profileInfo }) {
             </ul>
           </div>
         </div>
-        <div className="right">
-          {/* <div className="settings">{profileInfo.name}</div> */}
-          {console.log(profileInfo)}
-        </div>
+        <div className="right">{profileInfo.name}</div>
       </nav>
     </div>
   );

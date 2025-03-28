@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './profiles.css';
 
 export default function Profiles({ allUsers, checkProfile }) {
@@ -18,19 +19,10 @@ export default function Profiles({ allUsers, checkProfile }) {
         {allUsers.map((user, index) => {
           return (
             <div id={user.id} key={index}>
-              <a
-                href="/browse"
-                onClick={(e) => {
-                  e.preventDefault();
-                  checkProfile(index);
-                  setTimeout(() => {
-                    window.location.href = '/browse';
-                  }, 500);
-                }}
-              >
+              <Link to="/browse" onClick={() => checkProfile(user)}>
                 <div className={`image ${user.img}`}></div>
                 <h3>{user.name}</h3>
-              </a>
+              </Link>
             </div>
           );
         })}
