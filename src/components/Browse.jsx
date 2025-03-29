@@ -25,6 +25,34 @@ function Large() {
   );
 }
 
+function Small() {
+  return (
+    <>
+      <div className="show-options">Browse</div>
+      <ul className="small-links">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">TV Shows</a>
+        </li>
+        <li>
+          <a href="#">Movies</a>
+        </li>
+        <li>
+          <a href="#">New & Popular</a>
+        </li>
+        <li>
+          <a href="#">My List</a>
+        </li>
+        <li>
+          <a href="#">Browse by Languages</a>
+        </li>
+      </ul>
+    </>
+  );
+}
+
 export default function Browse({ profileInfo }) {
   return (
     <div id="browse-section">
@@ -34,7 +62,7 @@ export default function Browse({ profileInfo }) {
             <img src="/browse-logo.png" alt="" />
           </div>
           <div className="links">
-            <Large />
+            <Small />
           </div>
         </div>
         <div className="right">
