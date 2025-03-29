@@ -1,7 +1,9 @@
+import './browse.css';
+
 export default function Browse({ profileInfo }) {
   return (
     <div id="browse-section">
-      <nav>
+      <nav id="browse-nav">
         <div className="left">
           <div className="logo">
             <img src="/browse-logo.png" alt="" />
@@ -29,7 +31,13 @@ export default function Browse({ profileInfo }) {
             </ul>
           </div>
         </div>
-        <div className="right">{profileInfo.name}</div>
+        <div className="right">
+          {console.log(profileInfo)}
+          <img src="/magnify.svg" alt="magnify" />
+          <a href="#">Kids</a>
+          <img src="/bell-outline.svg" alt="bell-outline" />
+          <div className={`small-img ${profileInfo.img}`}></div>
+        </div>
       </nav>
     </div>
   );
