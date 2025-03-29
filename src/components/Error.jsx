@@ -3,7 +3,7 @@ import './error.css';
 export default function Error() {
   return (
     <div id="error-page">
-      <nav>
+      <nav id="error-nav">
         <a href="/profiles">
           <img src="/netflix-logo.png" alt="" />
         </a>
