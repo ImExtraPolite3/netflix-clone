@@ -5,7 +5,6 @@
 
 #browse-nav,
 .left,
-.links > ul,
 .right {
   display: flex;
 }
@@ -59,4 +58,8 @@
   height: 40px;
   width: 40px;
   border-radius: 5px;
+}
+
+.show-options:hover {
+  display: block;
 }

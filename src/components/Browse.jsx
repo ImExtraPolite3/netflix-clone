@@ -1,8 +1,9 @@
+import { useState } from 'react';
 import './browse.css';
 
-function Large() {
+function MainLink({ name, hide }) {
   return (
-    <ul>
+    <ul className={name} style={{ display: hide }}>
       <li>
         <a href="#">Home</a>
       </li>
@@ -26,29 +27,21 @@ function Large() {
 }
 
 function Small() {
+  const [hideLink, setHideLinks] = useState('none');
+
+  const handleOnLinks = () => setHideLinks('block');
+  const handleOffLink = () => setHideLinks('none');
+
   return (
     <>
-      <div className="show-options">Browse</div>
-      <ul className="small-links">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">TV Shows</a>
-        </li>
-        <li>
-          <a href="#">Movies</a>
-        </li>
-        <li>
-          <a href="#">New & Popular</a>
-        </li>
-        <li>
-          <a href="#">My List</a>
-        </li>
-        <li>
-          <a href="#">Browse by Languages</a>
-        </li>
-      </ul>
+      <div
+        className="show-options"
+        onMouseEnter={handleOnLinks}
+        onMouseLeave={handleOffLink}
+      >
+        Browse
+      </div>
+      <MainLink name={'small-links'} hide={hideLink} />
     </>
   );
 }
