@@ -60,6 +60,15 @@
   border-radius: 5px;
 }
 
-.show-options:hover {
-  display: block;
+.small-links {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 3vw;
+  }
 }

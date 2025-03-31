@@ -56,6 +56,7 @@ export default function Browse({ profileInfo }) {
           </div>
           <div className="links">
             <Small />
+            {/* <MainLink name={'some'} hide={'flex'} /> */}
           </div>
         </div>
         <div className="right">
