@@ -60,15 +60,27 @@
   border-radius: 5px;
 }
 
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 450px;
+  align-items: center;
+  /* justify-content: center; */
+  /* border: solid; */
+  width: 20px;
+}
+
 .small-links {
-  position: absolute;
+  /* position: absolute; */
   background-color: rgba(0, 0, 0, 0.8);
+  top: 90px;
+  left: 100px;
 
   li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15vw;
-    height: 3vw;
+    width: 300px;
+    height: 60px;
   }
 }
