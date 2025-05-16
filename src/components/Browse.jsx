@@ -1,27 +1,24 @@
 import { useState } from 'react';
 import './browse.css';
+const mainLinks = [
+  'Home',
+  'TV Shows',
+  'Movies',
+  'New & Popular',
+  'My List',
+  'Browse by Languages',
+];
 
-function MainLink({ name, hide }) {
+function MainLink({ name, hide, allLinks }) {
   return (
     <ul className={name} style={{ display: hide }}>
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#">TV Shows</a>
-      </li>
-      <li>
-        <a href="#">Movies</a>
-      </li>
-      <li>
-        <a href="#">New & Popular</a>
-      </li>
-      <li>
-        <a href="#">My List</a>
-      </li>
-      <li>
-        <a href="#">Browse by Languages</a>
-      </li>
+      {allLinks.map((links) => {
+        return (
+          <li>
+            <a href="#">{links}</a>
+          </li>
+        );
+      })}
     </ul>
   );
 }
@@ -41,7 +38,7 @@ function Small() {
       >
         Browse
       </div>
-      <MainLink name={'small-links'} hide={hideLink} />
+      <MainLink name={'small-links'} hide={hideLink} allLinks={mainLinks} />
     </>
   );
 }
