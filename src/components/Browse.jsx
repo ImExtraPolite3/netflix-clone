@@ -52,8 +52,8 @@ export default function Browse({ profileInfo }) {
             <img src="/browse-logo.png" alt="" />
           </div>
           <div className="links">
-            <Small />
-            {/* <MainLink name={'some'} hide={'flex'} /> */}
+            {/* <Small /> */}
+            <MainLink name={'some'} hide={'flex'} allLinks={mainLinks} />
           </div>
         </div>
         <div className="right">

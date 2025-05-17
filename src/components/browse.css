@@ -1,4 +1,6 @@
 #browse-section {
+  position: absolute;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -16,6 +18,11 @@
   justify-content: space-between;
   margin: auto;
   align-items: center;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 .left,
@@ -65,13 +72,9 @@
   flex-direction: column;
   gap: 450px;
   align-items: center;
-  /* justify-content: center; */
-  /* border: solid; */
-  width: 20px;
 }
 
 .small-links {
-  /* position: absolute; */
   background-color: rgba(0, 0, 0, 0.8);
   top: 90px;
   left: 100px;
