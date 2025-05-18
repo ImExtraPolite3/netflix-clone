@@ -1,6 +1,4 @@
 #browse-section {
-  position: absolute;
-  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -12,10 +10,12 @@
 }
 
 #browse-nav {
+  width: 100%;
+  position: fixed;
   background-color: black;
   height: 70px;
-  padding: 0 55px;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 46%;
   margin: auto;
   align-items: center;
   background: linear-gradient(
@@ -23,6 +23,10 @@
     rgba(0, 0, 0, 0) 20%,
     rgba(0, 0, 0, 1) 100%
   );
+}
+
+video {
+  width: 100%;
 }
 
 .left,

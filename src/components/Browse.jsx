@@ -64,6 +64,11 @@ export default function Browse({ profileInfo }) {
           <div className={`small-img ${profileInfo.img}`}></div>
         </div>
       </nav>
+      <div className="browse-content">
+        <video autoPlay>
+          <source src='/trailer.mp4' type='video/mp4'/>
+        </video>
+      </div>
     </div>
   );
 }
