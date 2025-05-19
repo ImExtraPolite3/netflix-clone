@@ -65,12 +65,10 @@ export default function Browse({ profileInfo }) {
         </div>
       </nav>
       <div className="browse-content">
-        <div className="trim-video">
         <video autoPlay>
-          <source src='/trailer.mp4' type='video/mp4'/>
+          <source src="/trailer.mp4" type="video/mp4" />
         </video>
-        </div>
-
+        <div className="movie-info"></div>
       </div>
     </div>
   );
