@@ -68,7 +68,32 @@ export default function Browse({ profileInfo }) {
         <video autoPlay>
           <source src="/trailer.mp4" type="video/mp4" />
         </video>
-        <div className="movie-info"></div>
+        <div className="info">
+          <div className="movie-info">
+            <img src="/movie-logo.png" alt="" width="600px" />
+            <p>
+              The film explores Clark Kent / Superman's journey to reconcile his
+              Kryptonian heritage with his adoptive human family in Smallville,
+              Kansas.
+            </p>
+            <div className="movie-buttons">
+              <div className="play">
+                <img src="/play.svg" alt="" />
+                <p>Play</p>
+              </div>
+              <div className="more-info">
+                <img src="/information-outline.svg" alt="" />
+                <p>More Info</p>
+              </div>
+            </div>
+          </div>
+          <div className="all-shows">
+            <h2>Your Next Watch</h2>
+            <div className="show-all-shows">
+              <div></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
