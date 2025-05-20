@@ -103,6 +103,12 @@ video {
   gap: 70px;
 }
 
+.show-all-shows > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .show-all-shows > div > div {
   display: flex;
   gap: 5px;
