@@ -43,6 +43,21 @@ function Small() {
   );
 }
 
+function Rows({ rowClass, rowTitle }) {
+  return (
+    <div className={rowClass}>
+      <h2>{rowTitle}</h2>
+      <div>
+        {Array(6)
+          .fill(true)
+          .map((_, i) => (
+            <div className="show" key={i}></div>
+          ))}
+      </div>
+    </div>
+  );
+}
+
 export default function Browse({ profileInfo }) {
   return (
     <div id="browse-section">
@@ -88,13 +103,12 @@ export default function Browse({ profileInfo }) {
             </div>
           </div>
           <div className="all-shows">
-            <h2>Your Next Watch</h2>
             <div className="show-all-shows">
-              {Array(6)
-                .fill(true)
-                .map((_, i) => (
-                  <div className="show" key={i}></div>
-                ))}
+              <Rows rowClass={'row-one'} rowTitle={'Your Next Watch'} />
+              <Rows
+                rowClass={'row-two'}
+                rowTitle={"Today's best picks for you"}
+              />
             </div>
           </div>
         </div>
