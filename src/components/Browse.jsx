@@ -90,7 +90,11 @@ export default function Browse({ profileInfo }) {
           <div className="all-shows">
             <h2>Your Next Watch</h2>
             <div className="show-all-shows">
-              <div></div>
+              {Array(6)
+                .fill(true)
+                .map((_, i) => (
+                  <div className="show" key={i}></div>
+                ))}
             </div>
           </div>
         </div>

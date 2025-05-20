@@ -42,7 +42,7 @@ video {
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 70px;
   z-index: 1;
   top: 40%;
   left: 0;
@@ -89,6 +89,28 @@ video {
 
 .more-info {
   background-color: gray;
+}
+
+.all-shows {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.show-all-shows {
+  display: flex;
+  gap: 5px;
+}
+
+.show {
+  background-color: gray;
+  width: 300px;
+  height: 150px;
+  border-radius: 5px;
+
+  h2 {
+    margin-bottom: 10px;
+  }
 }
 
 .left,
