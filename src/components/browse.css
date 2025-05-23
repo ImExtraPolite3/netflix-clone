@@ -76,6 +76,7 @@ video {
   font-weight: bold;
   padding: 5px 25px;
   border-radius: 5px;
+  cursor: pointer;
 
   img {
     width: 40px;
