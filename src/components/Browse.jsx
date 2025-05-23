@@ -71,25 +71,23 @@ function Footer() {
         <ul>
           <li>Audio Description</li>
           <li>Investor Relations</li>
-          <li>Privacy</li>
-          <li>Contact Us</li>
+          <li>Legal Notices</li>
+          <li>Ad Choices</li>
         </ul>
         <ul>
           <li>Help Center</li>
           <li>Jobs</li>
-          <li>Legal Notices</li>
-          <li>Do Not Sell or Share My Personal Information</li>
+          <li>Cookie Preferences</li>
         </ul>
         <ul>
           <li>Gift Cards</li>
-          <li>Netflix Shop</li>
-          <li>Cookie Preferences</li>
-          <li>Ad Choices</li>
+          <li>Terms of Use</li>
+          <li>Corporate Information</li>
         </ul>
         <ul>
           <li>Media Center</li>
-          <li>Terms of Use </li>
-          <li>Corporate Information</li>
+          <li>Privacy</li>
+          <li>Contact Us</li>
         </ul>
       </div>
       <button>Service Code</button>
