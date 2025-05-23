@@ -58,6 +58,15 @@ function Rows({ rowClass, rowTitle }) {
   );
 }
 
+function Footer() {
+  <footer>
+    <div className="socials"></div>
+    <div className="extra-info"></div>
+    <button>Service Code</button>
+    <p className="copyright"></p>
+  </footer>;
+}
+
 export default function Browse({ profileInfo }) {
   return (
     <div id="browse-section">
