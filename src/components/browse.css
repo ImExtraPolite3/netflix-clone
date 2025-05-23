@@ -191,3 +191,34 @@ video {
     height: 60px;
   }
 }
+
+footer {
+  width: 65%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.socials {
+  display: flex;
+  gap: 30px;
+}
+
+.socials > img {
+  width: 30px;
+}
+
+.extra-info {
+  display: flex;
+}
+
+.extra-info > ul {
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
