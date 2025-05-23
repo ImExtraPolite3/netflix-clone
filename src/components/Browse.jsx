@@ -150,6 +150,12 @@ export default function Browse({ profileInfo }) {
                   rowClass={'row-two'}
                   rowTitle={"Today's best picks for you"}
                 />
+                <Rows rowClass={'row-three'} rowTitle={'Romantic Movies'} />
+                <Rows
+                  rowClass={'row-four'}
+                  rowTitle={'Critically Acclaimed TV Shows'}
+                />
+                <Rows rowClass={'row-five'} rowTitle={'Watch It Again'} />
               </div>
             </div>
             <Footer />

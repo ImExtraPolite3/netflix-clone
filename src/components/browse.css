@@ -12,7 +12,7 @@
 #browse-nav {
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   background-color: black;
   height: 70px;
   justify-content: center;
@@ -195,7 +195,7 @@ video {
 
 footer {
   width: 65%;
-  margin: auto;
+  margin: 50px auto 0 auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
