@@ -224,6 +224,11 @@ footer {
   letter-spacing: 1px;
 }
 
+.extra-info > ul > li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 footer > button {
   width: fit-content;
   background: none;
