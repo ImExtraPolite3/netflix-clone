@@ -173,6 +173,10 @@ video {
 .small-img {
   height: 40px;
   width: 40px;
+}
+
+.small-img > img {
+  width: 100%;
   border-radius: 5px;
 }
 

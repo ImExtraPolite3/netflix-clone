@@ -117,7 +117,9 @@ export default function Browse({ profileInfo }) {
             <img src="/magnify.svg" alt="magnify" />
             <a href="#">Kids</a>
             <img src="/bell-outline.svg" alt="bell-outline" />
-            <div className={`small-img ${profileInfo.img}`}></div>
+            <div className="small-img">
+              <img src={profileInfo.img} alt="" />
+            </div>
           </div>
         </nav>
         <div className="browse-content">
