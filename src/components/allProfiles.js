@@ -1,12 +1,12 @@
 const users = [
   {
     name: 'ExtraPolite',
-    img: 'gray-image',
+    img: 'netflix-profile-blue.png',
     id: 'profile-one',
   },
   {
     name: 'Default',
-    img: 'blue-image',
+    img: 'netflix-profile-green.jpg',
     id: 'profile-two',
   },
 ];

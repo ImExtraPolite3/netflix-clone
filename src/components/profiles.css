@@ -27,16 +27,12 @@ body {
 .image {
   width: max(100px, 10vw);
   height: max(100px, 10vw);
+}
+
+.image > img {
+  width: 100%;
   border-radius: 5px;
   border: solid 3px #141414;
-}
-
-.gray-image {
-  background-color: gray;
-}
-
-.blue-image {
-  background-color: blue;
 }
 
 #all-profiles {
@@ -62,13 +58,11 @@ body {
   }
 }
 
-#all-profiles > div:hover {
-  div {
-    border: solid 3px white;
-  }
+#all-profiles > div > a:hover {
+  color: white;
 
-  h3 {
-    color: white;
+  div > img {
+    border: solid 3px white;
   }
 }
 

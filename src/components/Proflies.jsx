@@ -20,7 +20,9 @@ export default function Profiles({ allUsers, checkProfile }) {
           return (
             <div id={user.id} key={index}>
               <Link to="/browse" onClick={() => checkProfile(user)}>
-                <div className={`image ${user.img}`}></div>
+                <div className={`image ${user.img}`}>
+                  <img src={user.img} alt="" />
+                </div>
                 <h3>{user.name}</h3>
               </Link>
             </div>
