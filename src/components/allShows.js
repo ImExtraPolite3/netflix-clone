@@ -3,8 +3,8 @@ const shows = [
   { name: 'Squid Game', img: '/squid-game.jpg' },
   { name: 'Wednesday', img: '/wednesday.jpg' },
   { name: 'Money Heist', img: '/money-heist.webp' },
-  { name: 'bridgerton', img: '/bridgerton.webp' },
-  { name: 'lucifer', img: '/lucifer.jpg' },
+  { name: 'Bridgerton', img: '/bridgerton.webp' },
+  { name: 'Lucifer', img: '/lucifer.jpg' },
 ];
 
 export default shows;

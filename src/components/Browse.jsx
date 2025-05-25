@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './browse.css';
+import shows from './allShows';
 const mainLinks = [
   'Home',
   'TV Shows',
@@ -48,11 +49,13 @@ function Rows({ rowClass, rowTitle }) {
     <div className={rowClass}>
       <h2>{rowTitle}</h2>
       <div>
-        {Array(6)
-          .fill(true)
-          .map((_, i) => (
-            <div className="show" key={i}></div>
-          ))}
+        {shows.map((show, i) => {
+          return (
+            <div className="show" key={i}>
+              <img src={show.img} alt={show.name} />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
@@ -111,7 +114,6 @@ export default function Browse({ profileInfo }) {
             </div>
           </div>
           <div className="right">
-            {console.log(profileInfo)}
             <img src="/magnify.svg" alt="magnify" />
             <a href="#">Kids</a>
             <img src="/bell-outline.svg" alt="bell-outline" />
