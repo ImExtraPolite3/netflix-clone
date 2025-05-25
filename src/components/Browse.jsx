@@ -94,7 +94,7 @@ function Footer() {
         </ul>
       </div>
       <button>Service Code</button>
-      <p className="copyright">copyright stuff</p>
+      <p className="copyright">this is a clone please dont sue :)</p>
     </footer>
   );
 }
