@@ -16,6 +16,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: whenOpen 500ms;
 
   h1 {
     font-weight: unset;

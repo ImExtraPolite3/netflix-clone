@@ -1,15 +1,15 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './profiles.css';
 
 export default function Profiles({ allUsers, checkProfile }) {
-  const [whenOpen, setWhenOpen] = useState(null);
+  // const [whenOpen, setWhenOpen] = useState(null);
 
-  useEffect(() => {
-    setWhenOpen('whenOpen 500ms');
-  }, []);
+  // useEffect(() => {
+  //   setWhenOpen('whenOpen 500ms');
+  // }, []);
 
-  if (whenOpen === null) return null;
+  // if (whenOpen === null) return null;
 
   return (
     <div id="profile-section">
